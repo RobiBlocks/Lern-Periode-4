@@ -19,19 +19,27 @@ Robin Müller
 
 ## 20.2.2024
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich mir Tutorials angeschaut zu LINQ und dictionaries. Zudem habe ich in Visual Studio verschiedene Befehle ausprobiert. Dabei bin ich so versunken, sodass ich den Vokabeltrainer schon fast fertig programmiert habe. Er funktioniert bisher aber nur mit dem Wort Hund und hat noch keine zufällige Auswahl der Wörter. Die Idee mit LINQ konnte ich auch schon ausprobieren und sie hat mir gefallen.
 
 ## 27.2.2024
 
-- [ ] Erstes Arbeitspaket
-- [ ] ...
-- [ ] Viertes AP
+- [ ] Ich programmiere einen Array mit den Zahlen 1 bis 100.
+- [ ] Ich erstelle folgende Abfragen:
+  - [ ] Grösser als (eingabe)
+  - [ ] Kleiner als (eingabe)
+  - [ ] Immer noch über null nachdem (eingabe) hinzugefügt wurde
+  - [ ] Immer noch unter hundert nachdem (eingabe) hinzugefügt wurde
+  - [ ] Alle Negativen Zahlen
+  - [ ] Alle Positiven Zahlen
+- [ ] Ich programmiere, dass die Abfragen ausgeführt werden.
+- [ ] Ich sortiere die Ausgabe von kleinster Zahl bis zur grössten Zahl.
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
-| 1   |     |     |     |     |
-| ... |     |     |     |     |
-| 4   |     |     |     |     |
+| 1   | Code öffnen | -   | Array erscheint |     |
+| 2   | Code öffnen | -   | Abfragen erscheinen |     |
+| 3   | 1. "Was soll geschehen?" 2. "Grösser als welche Zahl?" | 1. G, 2. 99 | 100 |     |
+| 4   | 1. "Was soll geschehen?" 2. "Kleiner als welche Zahl?" | 1. K, 2. 5 | 1, 2, 3, 4 |     |
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
