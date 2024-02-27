@@ -23,27 +23,34 @@ Robin Müller
 
 ## 27.2.2024
 
-- [ ] Ich programmiere einen Array mit den Zahlen 1 bis 100.
-- [ ] Ich erstelle folgende Abfragen:
-  - [ ] Grösser als (eingabe)
-  - [ ] Kleiner als (eingabe)
-  - [ ] Immer noch über null nachdem (eingabe) hinzugefügt wurde
-  - [ ] Immer noch unter hundert nachdem (eingabe) hinzugefügt wurde
-  - [ ] Alle Negativen Zahlen
-  - [ ] Alle Positiven Zahlen
-- [ ] Ich programmiere, dass die Abfragen ausgeführt werden.
-- [ ] Ich sortiere die Ausgabe von kleinster Zahl bis zur grössten Zahl.
+- [x] Ich programmiere einen Array mit den Zahlen 1 bis 100.
+- [x] Ich erstelle folgende Abfragen:
+  - [x] Grösser als (eingabe)
+  - [x] Kleiner als (eingabe)
+  - [x] Immer noch über null nachdem (eingabe) abgezogen wurde
+  - [x] Immer noch unter hundert nachdem (eingabe) hinzugefügt wurde
+  - [x] Alle Negativen Zahlen
+  - [x] Alle Positiven Zahlen
+- [x] Ich programmiere, dass die Abfragen ausgeführt werden.
+- [x] Ich sortiere die Ausgaben von der Abfrage 'kleiner als' von grösster Zahl bis zur kleinster Zahl.
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
-| 1   | Code öffnen | -   | Array erscheint |     |
-| 2   | Code öffnen | -   | Abfragen erscheinen |     |
-| 3   | 1. "Was soll geschehen?" 2. "Grösser als welche Zahl?" | 1. G, 2. 99 | 100 |     |
-| 4   | 1. "Was soll geschehen?" 2. "Kleiner als welche Zahl?" | 1. K, 2. 5 | 1, 2, 3, 4 |     |
+| 1   | Code öffnen | -   | Array erscheint | x   |
+| 2   | Code öffnen | -   | Abfragen erscheinen | x   |
+| 3   | 1. "Was soll geschehen?" 2. "Grösser als welche Zahl?" | 1. g, 2. 99 | 100 | x   |
+| 4   | 1. "Was soll geschehen?" 2. "Kleiner als welche Zahl?" | 1. k, 2. 5 | 4, 3, 2, 1 | x   |
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich ein neues Projekt mit dem Namen "Zahlen mit Bedingungen" erstellt. Darin habe ich einen Array erstellt, welcheer sich automatisch mit den Zahlen 1 - 100 füllt, damit ich nicht stur diese Zahlen eingeben muss. Ich habe dabei auch die ersten Fragen für den Benutzer anzeigen lassen und seine Eingaben gespeichert. Danach habe ich die sechs Abfragen erstellt. Im dritten AP wurde das Programm funktionstüchtig, da der Benutzer die Abfrage auswählen konnte und diese ausgeführt wurden. Zu guter Letzt habe ich noch die Zahlen bei der Abfrage 'kleiner als' absteigend sortiert. (93 Wörter)
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen, und in der Spalte **Erfüllt?** einzutragen, ob Ihr Code die Test-Fälle erfüllt
+## 5.3.2024
+
+Ich beende die APs zuhause!
+
+- [ ] Ich erweitere den Zahlenraum auf bis zu -100 und füge die Abfragen Positiv und negativ hinzu.
+- [ ] Ich programmiere, dass man keine Buchstaben eingeben kann (eigene TryCatches)
+- [ ] Ich ergänze zu meinem Dictionary-Quizlet-Fake die Wörter vom Französischbuch leçon 3 Atelier A.
+- [ ] Passwort Creator
 
 ## Reflexion
 
