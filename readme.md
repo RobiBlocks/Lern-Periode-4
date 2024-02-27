@@ -45,12 +45,12 @@ Robin Müller
 
 ## 5.3.2024
 
-Ich beende die APs zuhause!
-
 - [ ] Ich erweitere den Zahlenraum auf bis zu -100 und füge die Abfragen Positiv und negativ hinzu.
-- [ ] Ich programmiere, dass man keine Buchstaben eingeben kann (eigene TryCatches)
-- [ ] Ich ergänze zu meinem Dictionary-Quizlet-Fake die Wörter vom Französischbuch leçon 3 Atelier A.
-- [ ] Passwort Creator
+- [ ] Ich schaue folgendes Tutorial zu eigenen Ausnahmen: [C# Tutorial #30 - Exceptionhandling (youtube.com)](https://www.youtube.com/watch?v=7ViaVtMnW7M)
+- [ ] Ich programmiere in mein "Zahlen mit Bedingungen" ein, dass man keine Buchstaben eingeben kann mithilfe von eigenen Ausnahmebehandlungen.
+- [ ] Ich schaue folgendes Video zu den Dictionarys: [C# Dictionary kurz und einfach erklärt - C# Tutorial Deutsch (youtube.com)](https://www.outube.com/watch?v=D02oPfxYfDU&list=PLCOblPDf69PcAP_e9SBn2KM5UL1F8atCU&index=1) und ergänze mein Dictionary-Game mit den Wörter vom Französischbuch leçon 3 Atelier A.
+
+✍️ Heute habe ich... (50 - 100 Wörter)
 
 ## Reflexion
 
