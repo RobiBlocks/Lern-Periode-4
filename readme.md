@@ -45,12 +45,30 @@ Robin Müller
 
 ## 5.3.2024
 
-- [ ] Ich erweitere den Zahlenraum auf bis zu -100 und füge die Abfragen Positiv und negativ hinzu.
-- [ ] Ich schaue folgendes Tutorial zu eigenen Ausnahmen: [C# Tutorial #30 - Exceptionhandling (youtube.com)](https://www.youtube.com/watch?v=7ViaVtMnW7M)
-- [ ] Ich programmiere in mein "Zahlen mit Bedingungen" ein, dass man keine Buchstaben eingeben kann mithilfe von eigenen Ausnahmebehandlungen.
-- [ ] Ich schaue folgendes Video zu den Dictionarys: [C# Dictionary kurz und einfach erklärt - C# Tutorial Deutsch (youtube.com)](https://www.outube.com/watch?v=D02oPfxYfDU&list=PLCOblPDf69PcAP_e9SBn2KM5UL1F8atCU&index=1) und ergänze mein Dictionary-Game mit den Wörter vom Französischbuch leçon 3 Atelier A.
+- [x] Ich erweitere den Zahlenraum auf bis zu -100 und füge die Abfragen Positiv und negativ hinzu.
+- [x] Ich schaue folgendes Tutorial zu eigenen Ausnahmen: [C# Tutorial #30 - Exceptionhandling (youtube.com)](https://www.youtube.com/watch?v=7ViaVtMnW7M)
+- [x] Ich programmiere in mein "Zahlen mit Bedingungen" ein, dass man keine Buchstaben eingeben kann mithilfe von eigenen Ausnahmebehandlungen.
+- [x] Ich schaue folgendes Video zu den Dictionarys: [C# Dictionary kurz und einfach erklärt - C# Tutorial Deutsch (youtube.com)](https://www.outube.com/watch?v=D02oPfxYfDU&list=PLCOblPDf69PcAP_e9SBn2KM5UL1F8atCU&index=1) und ergänze mein Dictionary-Game mit den Wörter vom Französischbuch leçon 1 Atelier A.
 
-✍️ Heute habe ich... (50 - 100 Wörter)
+✍️ Heute habe ich als erstes mein "Zahlen mit Bedingungen"-Programm um die Zahlen 0 bis -100 erweitert und zwei neue LINQ Abfragen hinzugefügt, um zu schauen, ob ich es noch kann. Danach habe ich mir das Tutorial zu dictionnaries angeschaut. Dann habe ich ein Paar Wörter vom Französischbuch leçon 1 Atelier A in meinen Vokabeltrainer eingefügt. Im Anschluss habe ich mir ein Video zum Thema "Ausnahmebehandlungen" angeschaut und direkt in meinem "Zahlen mit Bedingungen"-Programm hinzugefügt. Da ich am Schluss noch Zeit übrig hatte, habe ich Auftrag 7720 vom Modul 164 bearbeitet. (90 Wörter)
+
+## 12.03.2024
+
+- [ ] Ich lese folgenden Artikel zum Thema "LINQ TO SQL": [Learning by Walkthroughs - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/learning-by-walkthroughs)[Learning by Walkthroughs - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/learning-by-walkthroughs)
+  
+- [ ] Ich erstelle im MYSQL eine Testdatenbank zum Thema iPhones und befülle diese mit Daten einiger iPhones.
+  
+- [ ] Ich verbinde die Testdatenbank mit dem C#-Code.
+  
+- [ ] Ich füge per C#-Code eine iPad-Tabelle und Daten hinzu.
+  
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --- | --- | --- | --- | --- |
+| 1   | Artikel öffnen | -   | AP2 + AP3 können erfüllt werden |     |
+| 2   | MYSQL öffnen | SELECT * FROM iPhones WHERE Name = 'iPhone 11' | iPhone 11\| 2019-10-09 \| A13 Bionic |     |
+| 3   | VS öffnen | -   | Befehl für das Verbinden ist zu sehen |     |
+| 4   | MYSQL öffnen | SELECT * FROM iPads WHERE Name = 'iPad Air 5th Gen' | iPad Air 5th Gen \| 2022-18-03 \| M1 |     |
 
 ## Reflexion
 
