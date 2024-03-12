@@ -54,9 +54,9 @@ Robin Müller
 
 ## 12.03.2024
 
-- [ ] Ich lese folgenden Artikel zum Thema "LINQ TO SQL": [Learning by Walkthroughs - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/learning-by-walkthroughs)[Learning by Walkthroughs - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/learning-by-walkthroughs)
+- [x] Ich lese folgenden Artikel zum Thema "LINQ TO SQL": [Learning by Walkthroughs - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/learning-by-walkthroughs)[Learning by Walkthroughs - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/learning-by-walkthroughs)
   
-- [ ] Ich erstelle im MYSQL eine Testdatenbank zum Thema iPhones und befülle diese mit Daten einiger iPhones.
+- [x] Ich erstelle im MYSQL eine Testdatenbank zum Thema iPhones und befülle diese mit Daten einiger iPhones.
   
 - [ ] Ich verbinde die Testdatenbank mit dem C#-Code.
   
@@ -65,10 +65,45 @@ Robin Müller
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
-| 1   | Artikel öffnen | -   | AP2 + AP3 können erfüllt werden |     |
-| 2   | MYSQL öffnen | SELECT * FROM iPhones WHERE Name = 'iPhone 11' | iPhone 11\| 2019-10-09 \| A13 Bionic |     |
-| 3   | VS öffnen | -   | Befehl für das Verbinden ist zu sehen |     |
-| 4   | MYSQL öffnen | SELECT * FROM iPads WHERE Name = 'iPad Air 5th Gen' | iPad Air 5th Gen \| 2022-18-03 \| M1 |     |
+| 1   | Artikel öffnen | -   | AP2 + AP3 können erfüllt werden | ja  |
+| 2   | MYSQL öffnen | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | iPhone 11\\| 2019-09-10 \\| A13 Bionic | ja  |
+| 3   | VS öffnen | -   | Befehl für das Verbinden ist zu sehen | nein |
+| 4   | MYSQL öffnen | SELECT * FROM iPad WHERE Name = 'iPad Air 5th Gen' | iPad Air 5th Gen \\| 2022-18-03 \\| M1 | nein |
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --- | --- | --- | --- | --- |
+| 5   | VS öffnen | -   | Befehle um Daten der Tabelle hinzuzufügen, zu bearbeiten und zu löschen | nein |
+
+✍️ Heute habe ich als erstes eine Datenbank mit Daten zu verschiedenen iPhone-Modellen erstellt. Danach habe ich in dem oben verlinkten Artikel unter "Getting Started Walkthroughs" Abschnitt:
+
+- [Walkthrough: Simple Object Model and Query (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp)
+  
+- [Walkthrough: Querying Across Relationships (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp)
+  
+
+gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code einprogrammiert (zu diesem Zeitpunkt noch nicht getestet). Als ich den Artikel gelesen habe, habe ich bemerkt, dass dort nichts zum Thema Tabellen via LINQ erstellen steht, weshalb ich ein fünftes Arbeitspaket geschrieben habe, welches im Artikel behandelt wird. Dann habe ich das Programm gestarten und dann ist ein Fehler aufgetreten, welchen ich nach einiger Zeit an Recherche nicht lösen konnte.
+
+## 19.03.24
+
+- [ ] Ich löse das Problem mit dem DataContext
+  
+- [ ] Ich lese folgenden Artikel: [Walkthrough: Manipulating Data (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp) und programmiere in C#, dass ein neuer Datensatz hinzugefügt, verändert und gelöscht werden kann.
+  
+- [ ] Ich erstelle die Dokumentation Auftrag 2 in der LB vom M164
+  
+- [ ] Ich bearbeite Auftrag 3 in der LB vom M164
+  
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --- | --- | --- | --- | --- |
+| 1.1 | DataContext-Problem | -   | Verbindung zwischen Code und Datenbank ist möglich |     |
+| 2.1 | Programm starten | 1   | In der Datenbank wurde iPhone X hinzugefügt |     |
+| 2.2 | Programm starten | 2   | In der Datenbank wird iPhone X zu iPhone XR umbenannt |     |
+| 2.3 | Programm starten | 3   | In der Datenbank wird iPhone XR entfernt |     |
+| 3.1 | Dokumentation öffnen | -   | Dokumentation zu Auftrag 2 ist vollendet |     |
+| 4.1 | Dokumentation öffnen | -   | Dokumentation zu Auftrag 3 ist vollendet |     |
+
+✍️ Heute habe ich...
 
 ## Reflexion
 
