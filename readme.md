@@ -89,9 +89,9 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
   
 - [ ] Ich lese folgenden Artikel: [Walkthrough: Manipulating Data (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp) und programmiere in C#, dass ein neuer Datensatz hinzugefügt, verändert und gelöscht werden kann.
   
-- [ ] Ich erstelle die Dokumentation Auftrag 2 in der LB vom M164
+- [ ] Ich bearbeite "Auftrag 0706 - Abfragen mit Cross Join" vom M106
   
-- [ ] Ich bearbeite Auftrag 3 in der LB vom M164
+- [ ] Ich bearbeite "Auftrag 0707 - Abfragen mit Inner und Outer Join" vom M106
   
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
@@ -100,11 +100,15 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
 | 2.1 | Programm starten | 1   | In der Datenbank wurde iPhone X hinzugefügt |     |
 | 2.2 | Programm starten | 2   | In der Datenbank wird iPhone X zu iPhone XR umbenannt |     |
 | 2.3 | Programm starten | 3   | In der Datenbank wird iPhone XR entfernt |     |
-| 3.1 | Dokumentation öffnen | -   | Dokumentation zu Auftrag 2 ist vollendet |     |
-| 4.1 | Dokumentation öffnen | -   | Dokumentation zu Auftrag 3 ist vollendet |     |
+| 3.1 | Auftrag 0706 öffnen | -   | Auftrag erledigt |     |
+| 4.1 | Auftrag 0707 öffnen | -   | Auftrag erledigt |     |
 
 ✍️ Heute habe ich...
 
 ## Reflexion
 
 Formen Sie Ihre Zusammenfassungen in Hinblick auf Ihren VBV zu einem zusammenhängenden Text von 100 bis 200 Wörtern (wieder mit Angabe in Klammern).
+
+Wenn Zugriff auf PCH Datenbank, dann Teamzusammenstellungen
+
+Passwort Creator
