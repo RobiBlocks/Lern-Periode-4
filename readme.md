@@ -85,7 +85,7 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
 
 ## 19.03.24
 
-- [ ] Ich löse das Problem mit dem DataContext
+- [x] Ich löse das Problem mit dem DataContext
   
 - [ ] Ich lese folgenden Artikel: [Walkthrough: Manipulating Data (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp) und programmiere in C#, dass ein neuer Datensatz hinzugefügt, verändert und gelöscht werden kann.
   
@@ -96,19 +96,35 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
-| 1.1 | DataContext-Problem | -   | Verbindung zwischen Code und Datenbank ist möglich |     |
-| 2.1 | Programm starten | 1   | In der Datenbank wurde iPhone X hinzugefügt |     |
-| 2.2 | Programm starten | 2   | In der Datenbank wird iPhone X zu iPhone XR umbenannt |     |
-| 2.3 | Programm starten | 3   | In der Datenbank wird iPhone XR entfernt |     |
-| 3.1 | Auftrag 0706 öffnen | -   | Auftrag erledigt |     |
-| 4.1 | Auftrag 0707 öffnen | -   | Auftrag erledigt |     |
+| 1.1 | DataContext-Problem | -   | Verbindung zwischen Code und Datenbank ist möglich | ja  |
+| 2.1 | Programm starten | 1   | In der Datenbank wurde iPhone X hinzugefügt | ja  |
+| 2.2 | Programm starten | 2   | In der Datenbank wird iPhone X zu iPhone XR umbenannt | nein |
+| 2.3 | Programm starten | 3   | In der Datenbank wird iPhone XR entfernt | nein |
+| 3.1 | Auftrag 0706 öffnen | -   | Auftrag erledigt | nein |
+| 4.1 | Auftrag 0707 öffnen | -   | Auftrag erledigt | nein |
 
-✍️ Heute habe ich...
+✍️ Heute habe ich mit Herrn Colic das Problem mit dem DataContext-String gelöst. Ich habe dort einfach den Dateipfad eingefügt, allerdings war ein komplizierterer String mit mehr Informationen nötig. Anschliessend konnte ich nach einigen Versuchen und kleiner Unterstützung von ChatGPT neue Datensätze hinzufügen lassen. Es hat mich richtig glücklich gemacht, das die neuen Datensätze direkt in MySQL übernommen werden. Zum Schluss habe ich versucht, dass man Datensätze verändern kann. Dabei konnte ich den Namen der iPhones nicht verändern lassen, da er der Primärschlüssel ist. (83 Wörter)
+
+## 26.03.2024
+
+- [ ] Ich lösche die Tabelle iPhone und erstelle sie erneut allerdings mit einer Zahl als Primärschlüssel.
+  
+- [ ] Ich programmiere, dass Alle Attribute bearbeitet werden können (inkl. Name)
+  
+- [ ] Ich programmiere, dass ein ganzer Datensatz gelöscht werden kann
+  
+- [ ] Ich bearbeite einen Auftrag vom Modul 106
+  
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --- | --- | --- | --- | --- |
+| 1   | MySQL startem | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | 1\|iPhone 11\\| 2019-09-10 \\| A13 Bionic |     |
+| 2   | VS starten | 2. 2 (Verändern) 4. iPhone 15 6. 1 (Name) 8. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du bearbeiten 5. Was möchten Sie bearbeiten 7. Wie soll das iPhone neu heissen? |     |
+| 3   | VS starten | 2. 3 (Löschen) 4. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du löschen |     |
+| 4   | Auftrag öffnen | -   | Auftrag erledigt |     |
+
+✍️ Heute habe...
 
 ## Reflexion
 
 Formen Sie Ihre Zusammenfassungen in Hinblick auf Ihren VBV zu einem zusammenhängenden Text von 100 bis 200 Wörtern (wieder mit Angabe in Klammern).
-
-Wenn Zugriff auf PCH Datenbank, dann Teamzusammenstellungen
-
-Passwort Creator
