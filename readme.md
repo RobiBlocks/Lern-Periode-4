@@ -107,21 +107,21 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
 
 ## 26.03.2024
 
-- [ ] Ich lösche die Tabelle iPhone und erstelle sie erneut allerdings mit einer Zahl als Primärschlüssel.
+- [x] Ich lösche die Tabelle iPhone und erstelle sie erneut allerdings mit einer Zahl als Primärschlüssel.
   
-- [ ] Ich programmiere, dass Alle Attribute bearbeitet werden können (inkl. Name)
+- [x] Ich programmiere, dass Alle Attribute bearbeitet werden können (inkl. Name)
   
-- [ ] Ich programmiere, dass ein ganzer Datensatz gelöscht werden kann
+- [x] Ich programmiere, dass ein ganzer Datensatz gelöscht werden kann
   
 - [ ] Ich programmiere, dass der Benutzer alle iPhones ausgeben kann
   
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
-| 1   | MySQL startem | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bioni |     |
-| 2   | VS starten | 2. 2 (Verändern) 4. iPhone 15 6. 1 (Name) 8. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du bearbeiten 5. Was möchten Sie bearbeiten 7. Wie soll das iPhone neu heissen? |     |
-| 3   | Testfall 2 | 2. 3 (Löschen) 4. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du löschen |     |
-| 4   | VS starten | -   | Schnelle und einfache Oberfläche für den Benutzer ersichtlich |     |
+| 1   | MySQL startem | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic | ja  |
+| 2   | VS starten | 2. 2 (Verändern) 4. iPhone 15 6. 1 (Name) 8. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du bearbeiten 5. Was möchten Sie bearbeiten 7. Wie soll das iPhone neu heissen? | ja  |
+| 3   | Testfall 2 | 2. 3 (Löschen) 4. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du löschen | ja  |
+| 4   | VS starten | 2. 4 (Alles Auswählen) | 1. Was möchten Sie tun? 3. 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic usw. |     |
 
 ✍️ Heute habe...
 
