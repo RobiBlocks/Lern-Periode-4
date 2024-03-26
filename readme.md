@@ -120,7 +120,7 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
 | --- | --- | --- | --- | --- |
 | 1   | MySQL startem | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic |     |
 | 2   | VS starten | 2. 2 (Verändern) 4. iPhone 15 6. 1 (Name) 8. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du bearbeiten 5. Was möchten Sie bearbeiten 7. Wie soll das iPhone neu heissen? |     |
-| 3   | VS starten | 2. 3 (Löschen) 4. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du löschen |     |
+| 3   | Testfall 2 | 2. 3 (Löschen) 4. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du löschen |     |
 | 4   | VS starten | -   | Schnelle und einfache Oberfläche für den Benutzer ersichtlich |     |
 
 ✍️ Heute habe...
