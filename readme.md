@@ -19,7 +19,7 @@ Robin Müller
 
 ## 20.2.2024
 
-✍️ Heute habe ich mir Tutorials angeschaut zu LINQ und dictionaries. Zudem habe ich in Visual Studio verschiedene Befehle ausprobiert. Dabei bin ich so versunken, sodass ich den Vokabeltrainer schon fast fertig programmiert habe. Er funktioniert bisher aber nur mit dem Wort Hund und hat noch keine zufällige Auswahl der Wörter. Die Idee mit LINQ konnte ich auch schon ausprobieren und sie hat mir gefallen.
+✍️ Heute habe ich mir Tutorials angeschaut zu LINQ und dictionaries. Zudem habe ich in Visual Studio verschiedene Befehle ausprobiert. Dabei bin ich so versunken, sodass ich den Vokabeltrainer schon fast fertig programmiert habe. Er funktioniert bisher aber nur mit dem Wort Hund und hat noch keine zufällige Auswahl der Wörter. Die Idee mit LINQ konnte ich auch schon ausprobieren und sie hat mir gefallen. (65 Wörter)
 
 ## 27.2.2024
 
@@ -76,22 +76,15 @@ Robin Müller
 
 ✍️ Heute habe ich als erstes eine Datenbank mit Daten zu verschiedenen iPhone-Modellen erstellt. Danach habe ich in dem oben verlinkten Artikel unter "Getting Started Walkthroughs" Abschnitt:
 
-- [Walkthrough: Simple Object Model and Query (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp)
-  
-- [Walkthrough: Querying Across Relationships (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-querying-across-relationships-csharp)
-  
-
-gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code einprogrammiert (zu diesem Zeitpunkt noch nicht getestet). Als ich den Artikel gelesen habe, habe ich bemerkt, dass dort nichts zum Thema Tabellen via LINQ erstellen steht, weshalb ich ein fünftes Arbeitspaket geschrieben habe, welches im Artikel behandelt wird. Dann habe ich das Programm gestarten und dann ist ein Fehler aufgetreten, welchen ich nach einiger Zeit an Recherche nicht lösen konnte.
-
 ## 19.03.24
 
 - [x] Ich löse das Problem mit dem DataContext
   
 - [ ] Ich lese folgenden Artikel: [Walkthrough: Manipulating Data (C#) - ADO.NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp) und programmiere in C#, dass ein neuer Datensatz hinzugefügt, verändert und gelöscht werden kann.
   
-- [ ] Ich bearbeite "Auftrag 0706 - Abfragen mit Cross Join" vom M106
+- [ ] Ich bearbeite "Auftrag 2406 - Abfragen mit Cross Join" vom M106
   
-- [ ] Ich bearbeite "Auftrag 0707 - Abfragen mit Inner und Outer Join" vom M106
+- [ ] Ich bearbeite "Auftrag 2407 - Abfragen mit Inner und Outer Join" vom M106
   
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
@@ -113,7 +106,7 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
   
 - [x] Ich programmiere, dass ein ganzer Datensatz gelöscht werden kann
   
-- [ ] Ich programmiere, dass der Benutzer alle iPhones ausgeben kann
+- [x] Ich programmiere, dass der Benutzer alle iPhones ausgeben kann
   
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
@@ -121,9 +114,35 @@ gelesen. Anschliessend habe ich die Verbindung zwischen Datenbank und C#-Code ei
 | 1   | MySQL startem | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic | ja  |
 | 2   | VS starten | 2. 2 (Verändern) 4. iPhone 15 6. 1 (Name) 8. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du bearbeiten 5. Was möchten Sie bearbeiten 7. Wie soll das iPhone neu heissen? | ja  |
 | 3   | Testfall 2 | 2. 3 (Löschen) 4. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du löschen | ja  |
-| 4   | VS starten | 2. 4 (Alles Auswählen) | 1. Was möchten Sie tun? 3. 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic usw. |     |
+| 4   | VS starten | 2. 4 (Alles Auswählen) | 1. Was möchten Sie tun? 3. 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic usw. | ja  |
 
-✍️ Heute habe...
+✍️ Heute habe ich die Tabelle iPhone gelöscht und erneut, diesmal mit Zahl als Primary Key, erstellt. Danach habe ich mich um die Funktion`Verändern` gekümmert. Nun kann man vorhandene Daten zu den iPhones bearbeiten. Anschlissend habe ich einprogrammiert, dass man vorhandene iPhones aus der Datenbank `löschen` kann. Die letzte Funktion, die ich einprogrammiert habe, ist, dass man alle iPhones in der Datenbank `anzeigen` lassen kann. Da ich gegen Ende noch etwas Zeit übrig hatte, habe ich die Applikation so bearbeitet, dass sie für den Benutzer verständlich und übersichtlich ist. (88 Wörter)
+
+## 02.04.2024
+
+- [ ] Ich erstelle folgende eigenen Ausnahmebehandlungen:
+  
+  - [ ] Wenn eine Zahl verlangt wird kann man keine Buchstaben drücken
+    
+  - [ ] Wenn ein Name verlangt wird kann man nur vorhandene Namen eingeben
+    
+  - [ ] Wenn ein Datum verlangt wird kann man keine Buchstaben eingeben.
+    
+- [ ] Ich bearbeite vom Modul 106 Auftrag 2412: TCL Transaktionen
+  
+- [ ] Ich bearbeite vom Modul 106 Auftrag 2413: TCL Transaktionen Begriffe
+  
+
+| Testfall-nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --- | --- | --- | --- | --- |
+| 1.1.1 | Code starten | 2. B | 1. Was möchten Sie tun 3. Die Eingabe muss eine Zahl sein. Probieren Sie es bitte erneut. |     |
+| 1.1.2 | Code starten | 2. 9 | 1. Was möchten Sie tun -- 3. Die Eingabe muss eine Zahl zwischen 1 und 5 sein. Probieren Sie es bitte erneut. |     |
+| 1.2 | Ein iPhone verändern lassen | 2. 2 | 1. Was möchten Sie bearbeiten? -- 3. Dies ist kein akzeptables Datum. Probieren Sie es bitte erneut. |     |
+| 1.3 | Code starten | 2. 2 -- 4. iPhone ABC | 1. Was möchten Sie tun -- 3. Welches iPhone möchten Sie bearbeiten? -- 5. Dieses iPhone ist nicht vorhanden. Probieren Sie es bitte erneut. |     |
+| 2   | Auftrag öffnen | -   | Auftrag vollständig erledigt |     |
+| 3.1 | Auftrag öffnen | -   | Auftrag vollständig erledigt |     |
+
+✍️ Heute habe ich...
 
 ## Reflexion
 
