@@ -66,9 +66,9 @@ Robin Müller
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
 | 1   | Artikel öffnen | -   | AP2 + AP3 können erfüllt werden | ja  |
-| 2   | MYSQL öffnen | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | iPhone 11\\| 2019-09-10 \\| A13 Bionic | ja  |
+| 2   | MYSQL öffnen | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | iPhone 11\\ | 2019-09-10 \\ |
 | 3   | VS öffnen | -   | Befehl für das Verbinden ist zu sehen | nein |
-| 4   | MYSQL öffnen | SELECT * FROM iPad WHERE Name = 'iPad Air 5th Gen' | iPad Air 5th Gen \\| 2022-18-03 \\| M1 | nein |
+| 4   | MYSQL öffnen | SELECT * FROM iPad WHERE Name = 'iPad Air 5th Gen' | iPad Air 5th Gen \\ | 2022-18-03 \\ |
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
@@ -111,10 +111,10 @@ Robin Müller
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
-| 1   | MySQL startem | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic | ja  |
+| 1   | MySQL startem | SELECT * FROM iPhone WHERE Name = 'iPhone 11' | 1\\ | iPhone 11\\ |
 | 2   | VS starten | 2. 2 (Verändern) 4. iPhone 15 6. 1 (Name) 8. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du bearbeiten 5. Was möchten Sie bearbeiten 7. Wie soll das iPhone neu heissen? | ja  |
 | 3   | Testfall 2 | 2. 3 (Löschen) 4. iPhone XYZ | 1. Was möchten Sie tun? 3. Welches iPhone möchtest du löschen | ja  |
-| 4   | VS starten | 2. 4 (Alles Auswählen) | 1. Was möchten Sie tun? 3. 1\\|iPhone 11\\| 2019-09-10 \\| A13 Bionic usw. | ja  |
+| 4   | VS starten | 2. 4 (Alles Auswählen) | 1. Was möchten Sie tun? 3. 1\\ | iPhone 11\\ |
 
 ✍️ Heute habe ich die Tabelle iPhone gelöscht und erneut, diesmal mit Zahl als Primary Key, erstellt. Danach habe ich mich um die Funktion`Verändern` gekümmert. Nun kann man vorhandene Daten zu den iPhones bearbeiten. Anschlissend habe ich einprogrammiert, dass man vorhandene iPhones aus der Datenbank `löschen` kann. Die letzte Funktion, die ich einprogrammiert habe, ist, dass man alle iPhones in der Datenbank `anzeigen` lassen kann. Da ich gegen Ende noch etwas Zeit übrig hatte, habe ich die Applikation so bearbeitet, dass sie für den Benutzer verständlich und übersichtlich ist. (88 Wörter)
 
@@ -122,28 +122,50 @@ Robin Müller
 
 - [ ] Ich erstelle folgende eigenen Ausnahmebehandlungen:
   
-  - [ ] Wenn eine Zahl verlangt wird kann man keine Buchstaben drücken
+  - [x] Wenn eine Zahl verlangt wird kann man keine Buchstaben drücken
     
-  - [ ] Wenn ein Name verlangt wird kann man nur vorhandene Namen eingeben
+  - [x] Wenn ein Datum verlangt wird kann man keine Buchstaben eingeben
     
-  - [ ] Wenn ein Datum verlangt wird kann man keine Buchstaben eingeben.
+  - [ ] ~~Wenn ein Name verlangt wird kann man nur vorhandene Namen eingeben~~
     
-- [ ] Ich bearbeite vom Modul 106 Auftrag 2412: TCL Transaktionen
+- [x] Ich bearbeite vom Modul 106 Auftrag 2412: TCL Transaktionen
   
-- [ ] Ich bearbeite vom Modul 106 Auftrag 2413: TCL Transaktionen Begriffe
+- [x] Ich bearbeite vom Modul 106 Auftrag 2413: TCL Transaktionen Begriffe
   
 
 | Testfall-nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --- | --- | --- | --- | --- |
-| 1.1.1 | Code starten | 2. B | 1. Was möchten Sie tun 3. Die Eingabe muss eine Zahl sein. Probieren Sie es bitte erneut. |     |
-| 1.1.2 | Code starten | 2. 9 | 1. Was möchten Sie tun -- 3. Die Eingabe muss eine Zahl zwischen 1 und 5 sein. Probieren Sie es bitte erneut. |     |
-| 1.2 | Ein iPhone verändern lassen | 2. 2 | 1. Was möchten Sie bearbeiten? -- 3. Dies ist kein akzeptables Datum. Probieren Sie es bitte erneut. |     |
-| 1.3 | Code starten | 2. 2 -- 4. iPhone ABC | 1. Was möchten Sie tun -- 3. Welches iPhone möchten Sie bearbeiten? -- 5. Dieses iPhone ist nicht vorhanden. Probieren Sie es bitte erneut. |     |
-| 2   | Auftrag öffnen | -   | Auftrag vollständig erledigt |     |
-| 3.1 | Auftrag öffnen | -   | Auftrag vollständig erledigt |     |
+| 1.1.1 | Code starten | 2. B | 1. Was möchten Sie tun 3. Die Eingabe muss eine Zahl zwischen 1 und 5 sein. Probieren Sie es bitte erneut! | ja  |
+| 1.1.2 | Code starten | 2. 9 | 1. Was möchten Sie tun -- 3. Die Eingabe muss eine Zahl zwischen 1 und 5 sein. Probieren Sie es bitte erneut! | ja  |
+| 1.2 | Ein iPhone verändern lassen | 2. 2 -- 4. 25-25-2038 | 1. Was möchten Sie bearbeiten? -- 3. Welchen Release hat das iPhone nun? -- 5. Dies ist kein akzeptables Datum. Probieren Sie es bitte erneut! | ja  |
+| 1.3 | Code starten | 2. 2 -- 4. iPhone ABC | 1. Was möchten Sie tun -- 3. Welches iPhone möchten Sie bearbeiten? -- 5. Dieses iPhone ist nicht vorhanden. Probieren Sie es bitte erneut. | nein |
+| 2   | Auftrag öffnen | -   | Auftrag vollständig erledigt | ja  |
+| 3.1 | Auftrag öffnen | -   | Auftrag vollständig erledigt | ja  |
 
-✍️ Heute habe ich...
+✍️ Heute habe ich Ausnahmebehandlungen programmiert. Das Programm stürzt nun nicht mehr ab, wenn eine Zahl verlangt ist man aber einen Buchstaben eingibt. Zudem erkennt das Programm wenn das Datum (z.B. der Release) nicht gültig ist, sodass der Benutzer ein anderes eingeben muss. Da ich mehrere Probleme hatte bei den Ausnahmen (Ich habe ausversehen den Nummernblock deaktiviert, wodurch der Computer andere Zahlen interpretiert hat) und ich noch vorarbeiten musste, habe ich mich dazu entschieden die Letzte Ausnahmebehandlung auszulassen, um an den Aufträgen für Modul 106 zu arbeiten. Ich konnte beide Aufträge zum Thema Transaktionen erledigen.
 
 ## Reflexion
 
-Formen Sie Ihre Zusammenfassungen in Hinblick auf Ihren VBV zu einem zusammenhängenden Text von 100 bis 200 Wörtern (wieder mit Angabe in Klammern).
+##### Zusammenfassung:
+
+Als erstes habe ich in dieser Lernepriode ein kleines Zahlen-Programm erstellt um LINQ zu verstehen. In diesem Programm kann man eine Bedingung auswählen und eine Zahl zwischen -100 und 100 angeben. Danach werden all die Zahlen angezeigt die, die Bedingungen erfüllen.
+
+Ich habe mich mir ein Tutorial zu dictionnaries und Ausnahmebehandlungen angeschaut und mein Vokabeltrainer mit französisch Wörtern befüllt.
+
+Dann habe ich mir mehrere Artikel zum Thema "LINQ TO SQL" durchgelesen und eine Datenbank für iPhones erstellt. Danach hatte ich ein Problem mit dem Verbinden der Datenbank, welches Herr Colic und ich zusammen beheben konnten. Im Anschluss konnte man mit meinem Programm schon neue iPhones hinzufügen. Da ich den Namen zum Primärschlüssel gemacht habe, konnte man ihn nicht verändern lassen. Deshalb musste ich die iPhones Tabelle in der Datenbank neu erstellen, diesmal mit einer Zahl als Primärschlüssel. Nun kann man iPhones verändern, löschen und anzeigen lassen. Abschlissend habe ich mein Programm benutzerfreunlich gemacht. Ich habe alles schön formatiert und einige Ausnahmebehandlungen hinzugefügt, damit das Programm nicht mehr abstürtzt. (168 Wörter)
+
+##### Wie habe ich diese LP gearbeitet? Was war gut, was war schlecht?
+
+Ich bin sehr zufrieden mit meiner Arbeitsweise. Ich war immer konzentriert und habe fast nie Pausen gemacht. Es hat mir auch Spass gemacht sich selber über LINQ To SQL zu informieren. Es gab immer wieder kleine Glücksmomente wenn etwas neues funktioniert hat. Nicht so gut war, dass es während jeder Sitzung immer 2 APs gab, die länger als 45min dauerten und 2 APs, die genau richtig waren.
+
+##### Verbesserungsvorschlag (VBV):
+
+Bei der Planung der APs überlege ich immer wie lange ich für ein AP benötige und rechne 5 bis 10min Problemlösezeit ein.
+
+##### Wie möchte ich meine LP5 von Ihrer Arbeitsweise her gestalten?
+
+Es würde wiedereinmal Spass machen eine Gruppenprojekt zu realisieren. Zudem möchte ich mein neues Wissen über LINQ und Datenbanken einbringen und vertiefen.
+
+##### Was sind geeignete Abschlussprojekte?
+
+Da ich während dem Modul 164 eine Datenbank zu Powerchairhockey gemacht habe würde ich gerne ein Programm schreiben, um mit diesen Daten zu arbeiten und ausgeben zu lassen. Dabei könnte ich mein neues Wissen über LINQ verwenden und gleichzeitig etwas nützliches für mein Hobby programmieren
