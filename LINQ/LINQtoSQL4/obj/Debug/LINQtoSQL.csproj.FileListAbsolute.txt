@@ -1,0 +1,7 @@
+C:\Users\robin\source\repos\LINQtoSQL\obj\Debug\LINQtoSQL.csproj.AssemblyReference.cache
+C:\Users\robin\source\repos\LINQtoSQL\obj\Debug\LINQtoSQL.csproj.CoreCompileInputs.cache
+C:\Users\robin\source\repos\LINQtoSQL\bin\Debug\LINQtoSQL.exe.config
+C:\Users\robin\source\repos\LINQtoSQL\bin\Debug\LINQtoSQL.exe
+C:\Users\robin\source\repos\LINQtoSQL\bin\Debug\LINQtoSQL.pdb
+C:\Users\robin\source\repos\LINQtoSQL\obj\Debug\LINQtoSQL.exe
+C:\Users\robin\source\repos\LINQtoSQL\obj\Debug\LINQtoSQL.pdb
